@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContConterActivicty">
+
+    <TextView
+        android:id="@+id/timeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/timeB"
+        android:layout_marginStart="119dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/tresPontosA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="161dp"
+        android:text="+ 3 Pontos"
+        android:onClick="addPontoA"
+        />
+
+    <Button
+        android:id="@+id/doisPontosA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tresPontosA"
+        android:layout_centerVertical="true"
+        android:text="+2 Pontos "
+        android:onClick="addPontoA"/>
+
+    <Button
+        android:id="@+id/umPontoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tresPontosA"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="163dp"
+        android:text="Free THROW"
+        android:onClick="addPontoA"/>
+
+    <Button
+        android:id="@+id/tresPontosB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/umPontoB"
+        android:layout_alignTop="@+id/tresPontosA"
+        android:text="+3 pontos"
+        android:onClick="addPontoB"/>
+
+    <Button
+        android:id="@+id/doisPontosB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:text="+2 pontos"
+        android:onClick="addPontoB"/>
+
+    <Button
+        android:id="@+id/umPontoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/doisPontosB"
+        android:layout_alignTop="@+id/umPontoA"
+        android:text="Free THROW"
+        android:onClick="addPontoB"/>
+
+    <TextView
+        android:id="@+id/placarB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/placarA"
+        android:layout_marginEnd="71dp"
+        android:text="Time B" />
+
+    <TextView
+        android:id="@+id/placarA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:layout_toStartOf="@+id/button9"
+        android:text="Time A" />
+
+    <TextView
+        android:id="@+id/timeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="94dp"
+        android:layout_marginTop="108dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:text="Result"
+        android:onClick="ganhador"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Reset"
+        android:onClick="zerar"/>
+</RelativeLayout>
